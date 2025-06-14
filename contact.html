@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anish Shinde">
+    <meta name="description" content="This is a website for The Mumbai Palace">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mumbai Palace</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <section id="reserve">
+            <hr>
+            <h1>🏛️ | Reserve A Seat</h1>
+            <hr>
+            <nav id="index">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About the Palace</a></li>
+                    <li><a href="index.html#menu">Glance through the Menu</a></li>
+                    <li><a href="hours.html">When & Where To Find Us</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </section>
+    </header>
+    <main>
+        <h2>Reservation Details</h2>
+        <form action="reserved.html" method="GET">
+            <fieldset>
+                <legend>
+                    Reservation Form
+                </legend>
+                <p>
+                    <label for="firstname">First Name : </label>
+                    <input type="text" placeholder="First Name" required name="firstname" id="firstname">
+
+                    <label for="lastname">Last Name : </label>
+                    <input type="text" placeholder="Last Name" required name="lastname" id="lastname">
+                </p>
+                <p>
+                    <label for="email">Email ID : </label>
+                    <input type="email" name="email" id="email" placeholder="Email ID" required>
+                </p>
+                <p>
+                    <label for="phone">Phone : </label>
+                    <input type="tel" name="phone" id="phone" placeholder="9876543210" required>
+                </p>
+                <p>
+                    <label for="people">Number of Guests : </label>
+                    <input type="number" name="peoplecount" id="people" placeholder="1 - 10" required>
+                </p>
+                <hr>
+                <section>
+                    <label for="mealtime">When will you have the Meal?</label>
+                    <br><br>
+                    <div>
+                        <label for="date"></label>
+                        <input type="date" name="date" id="date" placeholder="Date" required>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="radio" name="mealtime" id="mealtime" value="Lunch" required>
+                        <label for="mealtime"> Lunch</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="mealtime" id="mealtime" value="Dinner" required>
+                        <label for="mealtime"> Dinner</label>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <label for="mealplace">Where will you have the Meal?</label>
+                    <div>
+                        <input type="radio" name="mealplace" id="mealplace" value="Outdoors" required>
+                        <label for="mealplace"> Outdoors</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="mealplace" id="mealplace" value="Indoors" required>
+                        <label for="mealplace"> Indoors</label>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <label for="mealtype">Meal Type :</label>
+                    <div>
+                        <input type="checkbox" name="mealtype" id="mealtype" value="veg" checked>
+                        <label for="mealtype"> Vegetarian</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="mealtype" id="mealtype" value="nonveg" checked>
+                        <label for="mealtype"> Non-Vegetarian</label>
+                    </div>
+                </section>
+
+                <p>
+                    <label for="requests">Special Requests : </label>
+                    <br>
+                    <textarea name="requests" id="" cols="100" rows="5" placeholder="Specify your requests"></textarea>
+                </p>
+                <hr>
+                <p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </fieldset>
+        </form>
+        <section>
+            <figure>
+                <img src="img/food_30.jpg" alt="Image of Kolhapuri Chicken with Mutton Biryani"
+                    title="Image of Kolhapuri Chicken with Mutton Biryani">
+                <figcaption>Kolhapuri Chicken with Mutton Biryani</figcaption>
+            </figure>
+        </section>
+        <p>
+            <a href="#reserve">Back to the top! ⬆️</a>
+        </p>
+        <hr>
+    </main>
+    <footer>
+        <p>
+            &lt; &lt; &lt; Copyright &copy; The Mumbai Palace &gt; &gt; &gt;
+        </p>
+    </footer>
+
+</body>
+
+</html>
